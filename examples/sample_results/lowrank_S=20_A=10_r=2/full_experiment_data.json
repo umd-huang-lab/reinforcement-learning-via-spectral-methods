@@ -1,0 +1,62 @@
+{
+    "MDP": {
+        "name": "<class 'tensor_rl.tasks.low_rank.LowRankMDPClass.LowRankMDP'>",
+        "params": {
+            "gamma": 0.5,
+            "step_cost": 0
+        }
+    },
+    "AGENTS": {
+        "<class 'tensor_rl.agents.OptimalAgentClass.OptimalAgent'>": {
+            "params": {},
+            "index": 0
+        },
+        "<class 'tensor_rl.agents.RMaxAgent2Class.RMaxAgent2'>": {
+            "params": {},
+            "index": 1
+        },
+        "<class 'tensor_rl.agents.RMaxTensorAgentClass.RMaxTensorAgent'>": {
+            "params": {},
+            "index": 2
+        },
+        "<class 'tensor_rl.agents.RandomAgentClass.RandomAgent'>": {
+            "params": {},
+            "index": 3
+        },
+        "<class 'tensor_rl.agents.QLearningAgentClass.QLearningAgent'>": {
+            "params": {
+                "alpha": 0.1,
+                "gamma": 0.95,
+                "epsilon": 0.1,
+                "anneal": false,
+                "explore": "uniform"
+            },
+            "index": 4
+        },
+        "<class 'tensor_rl.agents.DelayedQAgentClass.DelayedQAgent'>": {
+            "params": {
+                "gamma": 0.95,
+                "m": 5,
+                "epsilon1": 0.1
+            },
+            "index": 5
+        },
+        "<class 'tensor_rl.agents.DoubleQAgentClass.DoubleQAgent'>": {
+            "params": {
+                "alpha": 0.05,
+                "gamma": 0.99,
+                "epsilon": 0.1,
+                "anneal": false,
+                "explore": "uniform"
+            },
+            "index": 6
+        }
+    },
+    "MISC": {
+        "instances": 1,
+        "episodes": 10000,
+        "steps": 10,
+        "track_disc_reward": false
+    },
+    "FUNC": "run_agents_on_mdp"
+}

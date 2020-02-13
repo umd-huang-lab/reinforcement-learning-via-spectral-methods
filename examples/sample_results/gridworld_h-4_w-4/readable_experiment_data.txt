@@ -1,0 +1,15 @@
+(MDP)
+	gridworld_h-4_w-4
+(Agents)
+	Optimal,0
+	RMax,1
+	GIM,2
+	Random,3
+	Q-learning,4
+	Delayed-Q,5
+	Double-Q,6
+(Params)
+	instances : 1
+	episodes : 10000
+	steps : 10
+	track_disc_reward : False
